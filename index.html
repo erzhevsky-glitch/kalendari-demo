@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow" data-publish>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Квартальные календари 2027 с логотипом</title>
-<meta name="description" content="Квартальные календари на 2027 год с логотипом вашей компании: шапка в фирменном стиле, три блока на пружинах, красный бегунок. Макет шапки до печати.">
+<title>Квартальные календари премиум-качества</title>
+<meta name="description" content="Квартальные календари «Миди»: постер 335×230 мм, подложка 335×210 мм, рекламное поле 50 мм. Японские офсетные машины, картон 325 г/м², ламинация, пружины четырёх цветов, индивидуальная упаковка.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ru_RU">
-<meta property="og:title" content="Квартальные календари 2027 с логотипом вашей компании">
-<meta property="og:description" content="Подарок клиентам, который висит на стене весь год. Пришлите логотип – покажем макет шапки до печати.">
+<meta property="og:title" content="Квартальные календари премиум-качества">
+<meta property="og:description" content="Формат «Миди», плотный картон 325 г/м², матовая или глянцевая ламинация, пружины четырёх цветов и индивидуальная упаковка.">
 <meta property="og:image" content="assets/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" as="image" href="assets/hero-m.webp" media="(max-width: 860px)" fetchpriority="high">
@@ -23,8 +23,8 @@
   /* ---- тема: офисная бумага, чернильный синий, красный бегунок ---- */
   .v-page {
     --v-canvas: #e8ebee; --v-surface: #f6f7f8;
-    --v-ink: #18233a; --v-ink-soft: #4f5a6c;          /* 6,6:1 на холсте */
-    --v-accent: #c8102e; --v-accent-ink: #fff6f4;     /* 5,0:1 на холсте, 5,9:1 текст на кнопке */
+    --v-ink: #18233a; --v-ink-soft: #4f5a6c;
+    --v-accent: #c8102e; --v-accent-ink: #fff6f4;
     --navy: #1f3150; --paper: #fbfbfa;
     --v-font-display: "Alumni Sans", "Arial Narrow", "Segoe UI", system-ui, sans-serif;
     --v-font-text: "Golos Text", "Segoe UI", system-ui, sans-serif;
@@ -33,51 +33,89 @@
     --v-e2: 0 2px 6px rgb(var(--v-shadow-color) / .12), 0 24px 60px rgb(var(--v-shadow-color) / .20);
     --v-edge: inset 0 1px 0 rgb(255 255 255 / .7);
     --v-radius: 10px;
-    --v-section: clamp(3.5rem, 8vw, 7rem);
+    --v-section: clamp(3.5rem, 8vw, 6.5rem);
     --v-display-weight: 700;
     --v-track-tight: -0.005em;
-    --v-t-4xl: clamp(3.4rem, 2rem + 6.4vw, 7.6rem);
     --v-t-3xl: clamp(2.8rem, 1.9rem + 4.2vw, 5.4rem);
-    --v-t-2xl: clamp(2.3rem, 1.7rem + 2.6vw, 3.9rem);
+    --v-t-2xl: clamp(2.4rem, 1.7rem + 2.8vw, 4.2rem);
   }
   html, body { background: #e8ebee; }
   .v-page .v-display { line-height: .95; }
-  .v-page .v-lede { line-height: 1.45; max-width: 36ch; }
+  .v-page .v-lede { line-height: 1.45; max-width: 40ch; }
   .v-page [id] { scroll-margin-top: 4.5rem; }
 
   /* ---- шапка ---- */
-  .bar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; justify-content: space-between;
-    gap: var(--v-4); padding: var(--v-3) var(--v-gutter);
-    transition: background-color .3s var(--v-ease-out), box-shadow .3s var(--v-ease-out); }
-  .bar.is-scrolled { background: rgb(232 235 238 / .9); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--v-hair); }
-  .bar__name { font-family: var(--v-font-display); font-weight: 700; font-size: 1.45rem; letter-spacing: .01em; line-height: 1; display: flex; align-items: center; gap: .55rem; }
-  .bar__name i { width: .8rem; height: .62rem; border: 2px solid var(--v-accent); display: inline-block; }
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; gap: clamp(1rem, 3vw, 2.5rem);
+    padding: var(--v-3) var(--v-gutter); background: rgb(232 235 238 / .72); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); transition: background-color .3s var(--v-ease-out), box-shadow .3s var(--v-ease-out); }
+  .bar.is-scrolled { background: rgb(232 235 238 / .92); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--v-hair); }
+  .bar__logo { font-family: var(--v-font-display); font-weight: 800; font-size: 1.7rem; line-height: 1; letter-spacing: .01em; text-decoration: none; display: flex; align-items: center; gap: .5rem; }
+  .bar__logo i { width: .85rem; height: .66rem; border: 2px solid var(--v-accent); display: inline-block; }
+  .bar__contacts { display: grid; font-size: var(--v-t-xs); line-height: 1.35; color: var(--v-ink-soft); }
+  .bar__contacts a { text-decoration: none; }
+  .bar__nav { margin-left: auto; display: flex; align-items: center; gap: clamp(.8rem, 2vw, 1.8rem); font-size: var(--v-t-sm); font-weight: 500; }
+  .bar__nav > a:not(.v-btn) { text-decoration: none; }
   .bar .v-btn { padding: .7em 1.25em; }
+  @media (hover: hover) and (pointer: fine) { .bar__nav > a:not(.v-btn):hover { color: var(--v-accent); } .v-btn:hover { background: #b00d27; } }
 
   /* ---- 1. первый экран ---- */
   .hero [data-v-stage] { background: #dfe3e7; }
   .hero .v-fill picture { position: absolute; inset: 0; }
   .hero .v-fill img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; }
   .hero__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
-    background: radial-gradient(90% 100% at 0% 50%, rgb(236 239 242 / .82) 0%, rgb(236 239 242 / .45) 45%, transparent 72%); }
-  .hero__copy { position: absolute; z-index: 3; left: var(--v-gutter); top: clamp(5.5rem, 13vh, 8rem); width: min(52rem, 58vw); }
+    background: radial-gradient(90% 100% at 0% 50%, rgb(236 239 242 / .85) 0%, rgb(236 239 242 / .45) 45%, transparent 72%); }
+  .hero__copy { position: absolute; z-index: 3; left: var(--v-gutter); top: clamp(6rem, 15vh, 9rem); width: min(52rem, 58vw); }
   .hero__copy .v-stack { gap: var(--v-5); }
-  .hero h1 { font-size: clamp(3rem, 1.6rem + 3.6vw, 5.6rem); line-height: .94; }
+  .hero h1 { font-size: clamp(3.2rem, 1.6rem + 4.2vw, 6.4rem); line-height: .92; }
+  .hero__spec { font-size: var(--v-t-base); color: var(--v-ink-soft); max-width: 36ch; }
+  .hero__spec b { color: var(--v-ink); font-weight: 600; }
   .demo-for { display: inline-flex; align-items: center; gap: .6rem; align-self: flex-start; padding: .3rem .85rem .3rem .3rem;
     border-radius: 999px; background: rgb(255 255 255 / .72); box-shadow: inset 0 0 0 1px var(--v-hair);
     font-size: var(--v-t-xs); color: var(--v-ink-soft); max-width: 100%; }
   .demo-for img { width: 40px; height: 40px; border-radius: 50%; flex: none; }
   .demo-for span { line-height: 1.3; }
-  .hero__note { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
 
-  /* ---- 2. бегунок: настоящий квартальник 2027 ---- */
+  /* ---- 2. качество ---- */
+  .quality__band { background: var(--v-accent); color: var(--v-accent-ink); border-radius: var(--v-radius); box-shadow: var(--v-e2);
+    padding: clamp(1.8rem, 4vw, 3rem) clamp(1.5rem, 5vw, 4rem); display: grid; grid-template-columns: 1fr 1fr; gap: var(--v-6); }
+  .quality__band p { font-family: var(--v-font-display); font-weight: 700; font-size: clamp(1.9rem, 1.3rem + 2vw, 3rem); line-height: 1; }
+  .quality__band small { display: block; font-family: var(--v-font-text); font-weight: 400; font-size: var(--v-t-sm); line-height: 1.45; margin-top: var(--v-3); opacity: .9; }
+  .v-page .quality__note { margin-top: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 70ch; }
+
+  /* ---- 3–6. варианты исполнения ---- */
+  .opt-sec + .opt-sec { padding-top: 0; }
+  .opt-sec__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--v-3) var(--v-6);
+    padding-top: var(--v-5); border-top: 1px solid var(--v-hair-strong); margin-bottom: var(--v-6); }
+  .opt-sec__head p { color: var(--v-ink-soft); max-width: 46ch; }
+  .tiles { display: grid; gap: clamp(1rem, 2.4vw, 2rem); }
+  .tiles--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tiles--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .tile img, .tile__ph { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--v-radius); box-shadow: var(--v-e1); background: var(--v-surface); }
+  .tiles--2 .tile img, .tiles--2 .tile__ph { aspect-ratio: 4 / 3; }
+  .v-page .tile figcaption { display: flex; align-items: baseline; gap: var(--v-3); flex-wrap: wrap; margin-top: var(--v-3); }
+  .tile figcaption b { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-xl); line-height: 1; }
+  .tile figcaption span { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .tile__ph { display: grid; place-items: center; text-align: center; padding: var(--v-5); font-size: var(--v-t-sm); color: #3c3220; }
+  .tile__ph--gold { background: linear-gradient(135deg, #b8913a 0%, #f0d995 46%, #a77c2b 100%); }
+  .tile__ph--silver { background: linear-gradient(135deg, #8d949e 0%, #eef0f3 46%, #858c96 100%); color: #2a3140; }
+  .tile__ph span { background: rgb(255 255 255 / .55); padding: .4em .8em; border-radius: 999px; }
+
+  /* ---- 7. упаковка ---- */
+  .pack .v-wrap { position: relative; }
+  .v-page .pack__sticker { position: absolute; right: -.6rem; top: -1.3rem; z-index: 2; rotate: -4deg;
+    background: var(--v-accent); color: var(--v-accent-ink); font-weight: 600; font-size: var(--v-t-sm); padding: .65em 1.3em; border-radius: 4px; box-shadow: var(--v-e1); }
+  .pack__band { background: var(--navy); color: #eef1f7; border-radius: var(--v-radius) var(--v-radius) 0 0; padding: clamp(1.8rem, 4vw, 3rem) clamp(1.5rem, 5vw, 4rem); }
+  .pack__band h2 { max-width: 22ch; }
+  .v-page .pack__band p { color: #b9c2d3; margin-top: var(--v-3); max-width: 50ch; }
+  .pack figure { border-radius: 0 0 var(--v-radius) var(--v-radius); overflow: hidden; box-shadow: var(--v-e2); }
+  .pack figure img { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; }
+
+  /* ---- 8. бегунок: настоящий квартальник 2027 ---- */
   .beg [data-v-stage] { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: var(--v-8);
     padding: 4.5rem max(var(--v-gutter), calc((100vw - 76rem) / 2)) 2rem; }
   .beg__copy { position: relative; min-height: 22rem; }
   .beg__copy > div { position: absolute; left: 0; top: 50%; translate: 0 -50%; max-width: 30rem; display: flex; flex-direction: column; gap: var(--v-4); }
-  .beg__today { font-size: var(--v-t-sm); color: var(--v-ink-soft); margin-top: var(--v-3); }
+  .v-page .beg__today { font-size: var(--v-t-sm); color: var(--v-ink-soft); margin-top: var(--v-3); }
   .beg__today b { color: var(--v-accent); font-weight: 600; }
-
   .kv { --u: min(.96vh, 1.9vw); width: calc(var(--u) * 46); background: var(--paper); border-radius: 4px;
     box-shadow: var(--v-e2); position: relative; font-family: var(--v-font-text); color: var(--v-ink); }
   .kv__head { height: calc(var(--u) * 21); background: var(--navy); border-radius: 4px 4px 0 0; display: grid; place-items: center; position: relative; color: #e9edf5; }
@@ -98,62 +136,42 @@
   .kv__runner { position: absolute; left: 0; top: 0; border: calc(var(--u) * .32) solid var(--v-accent); border-radius: 2px;
     box-shadow: 0 2px 6px rgb(200 16 46 / .25); pointer-events: none; will-change: transform; transition: transform .22s var(--v-ease-out); }
 
-  /* ---- 3. устройство ---- */
-  .parts__grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; }
-  .parts figure { border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e1); }
-  .parts figure img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
-  .parts dl { margin: var(--v-6) 0 0; display: grid; gap: 0; }
-  .parts dl > div { display: grid; grid-template-columns: 11rem 1fr; gap: var(--v-4); padding: var(--v-4) 0; border-top: 1px solid var(--v-hair); }
-  .parts dt { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); line-height: 1.1; }
-  .parts dd { margin: 0; color: var(--v-ink-soft); max-width: 44ch; }
+  /* ---- 9. цены ---- */
+  .price { display: grid; grid-template-columns: 14rem 1fr auto; gap: var(--v-6); align-items: baseline; padding: var(--v-5) 0;
+    border-top: 1px solid var(--v-hair-strong); border-bottom: 1px solid var(--v-hair-strong); margin-top: var(--v-6); }
+  .price h3 { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-2xl); line-height: .95; }
+  .price p { color: var(--v-ink-soft); }
+  .price__val { font-weight: 600; white-space: nowrap; }
+  .v-page .prices__note { margin-top: var(--v-4); color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 60ch; }
 
-  /* ---- 4. на стене ---- */
-  .wall .v-fill img { object-position: 65% 50%; }
-  .wall__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
-    background: radial-gradient(90% 90% at 0% 0%, rgb(236 239 242 / .85) 0%, rgb(236 239 242 / .4) 45%, transparent 70%); }
-  .wall__copy { position: absolute; z-index: 3; left: var(--v-gutter); top: clamp(5.5rem, 16vh, 10rem); max-width: min(40rem, 86vw); }
-  .wall__copy p { margin-top: var(--v-4); }
-
-  /* ---- 5. варианты ---- */
-  .opts__head { display: grid; grid-template-columns: 1fr 1fr; gap: var(--v-6); align-items: end; margin-bottom: var(--v-7); }
-  .opt { display: grid; grid-template-columns: 17rem 1fr auto; gap: var(--v-6); align-items: baseline; padding: var(--v-5) 0; border-top: 1px solid var(--v-hair-strong); }
-  .opt:last-of-type { border-bottom: 1px solid var(--v-hair-strong); }
-  .opt h3 { font-family: var(--v-font-display); font-weight: 700; font-size: clamp(2rem, 1.6rem + 1.6vw, 3rem); line-height: .95; }
-  .opt p { color: var(--v-ink-soft); max-width: 52ch; }
-  .opt__price { font-weight: 600; white-space: nowrap; }
-  .opts__min { margin-top: var(--v-5); color: var(--v-ink-soft); font-size: var(--v-t-sm); }
-
-  /* ---- 6. как заказать ---- */
-  .v-page .steps__img { border-radius: var(--v-radius); overflow: hidden; margin-top: var(--v-7); box-shadow: var(--v-e1); }
-  .steps__img img { width: 100%; aspect-ratio: 21 / 8; object-fit: cover; object-position: 70% 50%; }
-  .steps ol { list-style: none; padding: 0; margin: var(--v-7) 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--v-6) clamp(2rem, 6vw, 6rem); }
-  .steps li { display: grid; grid-template-columns: 3.4rem 1fr; gap: var(--v-3); }
-  .steps li b { font-family: var(--v-font-display); font-weight: 800; font-size: 3.4rem; line-height: .8; color: var(--v-accent); }
-  .steps li h3 { font-weight: 600; font-size: var(--v-t-lg); line-height: 1.25; margin-bottom: var(--v-2); }
-  .steps li p { color: var(--v-ink-soft); }
-
-  /* ---- 7. заказ: панель как шапка календаря ---- */
+  /* ---- 10. контакты ---- */
   .close__panel { background: var(--navy); color: #eef1f7; border-radius: var(--v-radius); padding: clamp(2rem, 6vw, 5rem); box-shadow: var(--v-e2);
     display: grid; grid-template-columns: 1.3fr 1fr; gap: var(--v-7); align-items: end; }
   .close__panel .v-soft { color: #b9c2d3; }
   .close__panel .v-btn { margin-top: var(--v-6); font-size: var(--v-t-base); }
-  .close__meta { display: grid; gap: var(--v-4); font-size: var(--v-t-sm); }
+  .close__meta { display: grid; gap: var(--v-4); font-size: var(--v-t-base); }
   .close__meta span { display: grid; gap: .15rem; color: #b9c2d3; border-top: 1px solid rgb(238 241 247 / .18); padding-top: var(--v-3); }
-  .close__meta b { color: #eef1f7; font-weight: 600; }
+  .close__meta b { color: #eef1f7; font-weight: 600; font-size: var(--v-t-sm); }
+  .close__meta a { color: #eef1f7; text-decoration: none; font-size: var(--v-t-lg); }
   .foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--v-3); padding: var(--v-6) 0 var(--v-4); font-size: var(--v-t-xs); color: var(--v-ink-soft); }
 
-  @media (hover: hover) and (pointer: fine) { .v-btn:hover { background: #b00d27; } }
-
+  @media (max-width: 1080px) { .bar__contacts { display: none; } }
   @media (max-width: 860px) {
+    .bar__nav > a:not(.v-btn) { display: none; }
+    .bar__logo { font-size: 1.4rem; }
     .hero__copy { top: 5.2rem; width: auto; right: var(--v-gutter); }
     .hero__scrim { display: none; }
     .hero .v-fill { top: 57%; }
     .hero .v-fill img { object-position: 50% 82%; }
-    .hero h1 { font-size: clamp(2.6rem, 11vw, 3.6rem); }
-    .hero .v-lede { font-size: 1.05rem; }
-    .hero__note { display: none; }
-    .bar { justify-content: flex-end; }
-    .bar__name { display: none; }
+    .hero h1 { font-size: clamp(2.8rem, 12vw, 3.8rem); }
+    .hero__spec { font-size: .95rem; }
+
+    .quality__band { grid-template-columns: 1fr; gap: var(--v-5); }
+    .tiles--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .tiles--2 { gap: .8rem; }
+    .tile figcaption span { display: none; }
+    .v-page .pack__sticker { right: -.3rem; top: -1.5rem; }
+    .pack figure img { aspect-ratio: 4 / 3; }
 
     .beg [data-v-stage] { grid-template-columns: 1fr; grid-template-rows: auto 1fr; gap: var(--v-4); padding: 4.2rem var(--v-gutter) 1.2rem; align-items: start; justify-items: center; }
     .beg__copy { order: 2; width: 100%; min-height: 0; height: 100%; }
@@ -162,17 +180,9 @@
     .beg__copy p { font-size: .95rem; }
     .kv { --u: min(.56vh, 1.9vw); }
 
-    .parts__grid, .opts__head, .close__panel { grid-template-columns: 1fr; }
-    .parts figure img { aspect-ratio: 4 / 3; }
-    .parts dl > div { grid-template-columns: 1fr; gap: var(--v-1); }
-    .opt { grid-template-columns: 1fr auto; gap: var(--v-2) var(--v-4); }
-    .opt p { grid-column: 1 / -1; grid-row: 2; }
-    .steps ol { grid-template-columns: 1fr; }
-    .steps__img img { aspect-ratio: 4 / 3; }
-    .wall__copy { top: 5rem; right: var(--v-gutter); }
-    .wall__copy h2 { font-size: 2.4rem; }
-    .wall__scrim { background: linear-gradient(to bottom, rgb(236 239 242 / .94) 0%, rgb(236 239 242 / .8) 40%, transparent 58%); }
-    .wall .v-fill img { object-position: 78% 50%; }
+    .price { grid-template-columns: 1fr auto; gap: var(--v-2) var(--v-4); }
+    .price p { grid-column: 1 / -1; grid-row: 2; }
+    .close__panel { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -181,8 +191,16 @@
   <div data-v-progress></div>
 
   <header class="bar">
-    <span class="bar__name"><i aria-hidden="true"></i><span>Квартальные календари 2027</span></span>
-    <a class="v-btn" href="#zakaz">Рассчитать заказ</a>
+    <a class="bar__logo" href="#top" aria-label="goodandprint – наверх"><i aria-hidden="true"></i>goodandprint</a>
+    <div class="bar__contacts">
+      <a href="tel:+79260011677">+7 (926) 001-16-77</a>
+      <a href="mailto:goodandprint@mail.ru">goodandprint@mail.ru</a>
+    </div>
+    <nav class="bar__nav" aria-label="Разделы">
+      <a href="#ceny">Цены</a>
+      <a href="#kontakty">Контакты</a>
+      <a class="v-btn" href="#kontakty">Рассчитать заказ</a>
+    </nav>
   </header>
 
   <main>
@@ -192,23 +210,105 @@
         <div class="v-fill">
           <picture>
             <source media="(max-width: 860px)" srcset="assets/hero-m.webp">
-            <img src="assets/hero.webp" alt="Квартальный календарь с синей шапкой и красным бегунком на стене офиса" fetchpriority="high">
+            <img src="assets/hero.webp" alt="Квартальный календарь на трёх пружинах с красным бегунком" fetchpriority="high">
           </picture>
         </div>
         <div class="hero__scrim"></div>
         <div class="hero__copy">
           <div class="v-stack" data-v-cue="0 0.82 0">
             <p class="demo-for"><img src="assets/zakazchik.jpg" alt="" width="40" height="40"><span>Демо для Юлии Булгаковой · по заказу «Одностраничный продающий лендинг»</span></p>
-            <h1 class="v-display" data-v-kinetic="lines">Квартальные календари на 2027 год с логотипом вашей компании</h1>
-            <p class="v-lede">Шапка в вашем фирменном стиле, три блока на пружинах и красный бегунок. Макет покажем до печати.</p>
-            <div><a class="v-btn" href="#zakaz" data-v-magnet="0.25" data-v-rise="0">Рассчитать заказ</a></div>
-            <p class="hero__note">Подарок клиентам и партнёрам к Новому году</p>
+            <h1 class="v-display" data-v-kinetic="lines">Квартальные календари премиум-качества</h1>
+            <p class="hero__spec"><b>Формат «Миди»:</b> постер 335×230&nbsp;мм, подложка 335×210&nbsp;мм, рекламное поле 50&nbsp;мм.</p>
+            <div><a class="v-btn" href="#kontakty" data-v-magnet="0.25" data-v-rise="0">Рассчитать заказ</a></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 2. Бегунок -->
+    <!-- 2. Качество -->
+    <section class="quality v-section v-section--tight" id="kachestvo" data-v-act="flow">
+      <div class="v-wrap" data-v-in data-v-stagger="80">
+        <div class="quality__band">
+          <p>Печать на японских офсетных машинах</p>
+          <p>Плотный картон 325&nbsp;г/м²<small>Толщина 0,5&nbsp;мм</small></p>
+        </div>
+        <p class="quality__note">С ламинацией плотность картона – 510&nbsp;г/м²: он почти как пластиковая карта (540&nbsp;мкм).</p>
+      </div>
+    </section>
+
+    <!-- 3. Ламинация -->
+    <section class="opt-sec v-section" id="laminaciya" data-v-act="flow">
+      <div class="v-wrap">
+        <div class="opt-sec__head" data-v-in>
+          <h2 class="v-display v-display--md">Ламинация</h2>
+          <p>Защищает шапку от царапин и выцветания. Выберите, какой будет поверхность.</p>
+        </div>
+        <div class="tiles tiles--2" data-v-in data-v-stagger="90">
+          <figure class="tile"><img src="assets/lam-matte.webp" alt="Шапка календаря с матовой ламинацией" loading="lazy"><figcaption><b>Матовая</b><span>бархатистая, без бликов</span></figcaption></figure>
+          <figure class="tile"><img src="assets/lam-gloss.webp" alt="Шапка календаря с глянцевой ламинацией" loading="lazy"><figcaption><b>Глянцевая</b><span>яркие цвета и блеск</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Пружина -->
+    <section class="opt-sec v-section" id="pruzhina" data-v-act="flow">
+      <div class="v-wrap">
+        <div class="opt-sec__head" data-v-in>
+          <h2 class="v-display v-display--md">Пружина</h2>
+          <p>Четыре цвета – под фирменный стиль вашей шапки.</p>
+        </div>
+        <div class="tiles tiles--4" data-v-in data-v-stagger="70">
+          <figure class="tile"><img src="assets/spring-white.webp" alt="Белая пружина календаря" loading="lazy"><figcaption><b>Белая</b></figcaption></figure>
+          <figure class="tile"><img src="assets/spring-black.webp" alt="Чёрная пружина календаря" loading="lazy"><figcaption><b>Чёрная</b></figcaption></figure>
+          <figure class="tile"><img src="assets/spring-silver.webp" alt="Серебряная пружина календаря" loading="lazy"><figcaption><b>Серебро</b></figcaption></figure>
+          <figure class="tile"><img src="assets/spring-bronze.webp" alt="Бронзовая пружина календаря" loading="lazy"><figcaption><b>Бронза</b></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Блоки -->
+    <section class="opt-sec v-section" id="bloki" data-v-act="flow">
+      <div class="v-wrap">
+        <div class="opt-sec__head" data-v-in>
+          <h2 class="v-display v-display--md">Блоки</h2>
+          <p>Бумага календарных блоков – от классической офсетной до дизайнерской.</p>
+        </div>
+        <div class="tiles tiles--4" data-v-in data-v-stagger="70">
+          <figure class="tile"><img src="assets/block-offset.webp" alt="Блок из офсетной бумаги" loading="lazy"><figcaption><b>Офсетные</b></figcaption></figure>
+          <figure class="tile"><img src="assets/block-coated.webp" alt="Блок из мелованной бумаги" loading="lazy"><figcaption><b>Мелованные</b></figcaption></figure>
+          <figure class="tile"><img src="assets/block-silver.webp" alt="Блок из серебристой бумаги" loading="lazy"><figcaption><b>Серебро</b></figcaption></figure>
+          <figure class="tile"><img src="assets/block-verdana.webp" alt="Блок из дизайнерской бумаги Вердана" loading="lazy"><figcaption><b>Вердана</b></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Пикколо -->
+    <section class="opt-sec v-section" id="pikkolo" data-v-act="flow">
+      <div class="v-wrap">
+        <div class="opt-sec__head" data-v-in>
+          <h2 class="v-display v-display--md">Пикколо</h2>
+          <p>Два цвета на выбор.</p>
+        </div>
+        <div class="tiles tiles--2" data-v-in data-v-stagger="90">
+          <figure class="tile"><div class="tile__ph tile__ph--gold"><span>Здесь будет ваше фото</span></div><figcaption><b>Золото</b></figcaption></figure>
+          <figure class="tile"><div class="tile__ph tile__ph--silver"><span>Здесь будет ваше фото</span></div><figcaption><b>Серебро</b></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Упаковка -->
+    <section class="pack v-section" id="upakovka" data-v-act="flow">
+      <div class="v-wrap" data-v-in data-v-stagger="90">
+        <p class="pack__sticker">Сравните с конкурентами!</p>
+        <div class="pack__band">
+          <h2 class="v-display v-display--md">Каждый календарь&nbsp;–&nbsp;в индивидуальном пакете</h2>
+          <p>Так он выглядит премиально и сразу готов стать подарком: можно вручать клиенту, не перекладывая.</p>
+        </div>
+        <figure><img src="assets/package.webp" alt="Квартальный календарь в индивидуальном прозрачном пакете" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <!-- 8. Бегунок -->
     <section class="beg" id="begunok" data-v-act="pin" data-v-span="2.6" data-v-drift="#e1e5ea">
       <div data-v-stage>
         <div class="beg__copy">
@@ -219,7 +319,7 @@
           <div data-v-cue="0.5 0.97">
             <h2 class="v-display v-display--lg">Три месяца на одном листе</h2>
             <p class="v-body v-soft">Прошлый, текущий и следующий месяц сразу. Поэтому квартальник не убирают в ящик, а вешают на стену и планируют по нему.</p>
-            <p class="beg__today" aria-live="off">Бегунок сейчас на <b data-today>1 января</b></p>
+            <p class="beg__today">Бегунок сейчас на <b data-today>1 января</b></p>
           </div>
         </div>
         <div class="kv" role="img" aria-label="Квартальный календарь на 2027 год: шапка под логотип и три блока – декабрь 2026, январь и февраль 2027">
@@ -234,84 +334,33 @@
       </div>
     </section>
 
-    <!-- 3. Устройство -->
-    <section class="parts v-section" id="ustroystvo" data-v-act="flow">
-      <div class="v-wrap parts__grid">
-        <figure data-v-reveal="left" data-v-reveal-at="0.08 0.42"><img src="assets/runner.webp" alt="Красный бегунок на блоке календаря крупным планом" loading="lazy"></figure>
-        <div data-v-in data-v-stagger="70">
-          <h2 class="v-display v-display--md">Из чего собран квартальник</h2>
-          <dl>
-            <div><dt>Шапка</dt><dd>Ваш логотип, слоган, фото продукции или офиса. Самое заметное место календаря.</dd></div>
-            <div><dt>Три блока</dt><dd>Прошлый, текущий и следующий месяц – на каждый лист по одному отрывному блоку.</dd></div>
-            <div><dt>Рекламные поля</dt><dd>Полосы под блоками: телефон, сайт, адрес или QR&#8209;код.</dd></div>
-            <div><dt>Бегунок</dt><dd>Красное окошко отмечает сегодняшнее число и каждый день возвращает к календарю взгляд.</dd></div>
-            <div><dt>Пружины</dt><dd>Блоки перелистываются ровно, календарь висит на стене весь год.</dd></div>
-          </dl>
-        </div>
+    <!-- 9. Цены -->
+    <section class="prices v-section v-section--tight" id="ceny" data-v-act="flow">
+      <div class="v-wrap" data-v-in data-v-stagger="80">
+        <h2 class="v-display v-display--md">Цены</h2>
+        <div class="price"><h3>Миди</h3><p>Постер 335×230&nbsp;мм, подложка 335×210&nbsp;мм, рекламное поле 50&nbsp;мм</p><span class="price__val">уточнить</span></div>
+        <p class="prices__note">Цена зависит от тиража, ламинации, цвета пружины и бумаги блоков. Напишите, сколько календарей нужно, – посчитаем под ваш заказ.</p>
       </div>
     </section>
 
-    <!-- 4. На стене -->
-    <section class="wall" id="na-stene" data-v-act="pin" data-v-span="1.8" data-v-drift="#e8ebee">
-      <div data-v-stage>
-        <div class="v-fill"><img src="assets/reception.webp" alt="Квартальный календарь на стене за стойкой ресепшена" loading="lazy"></div>
-        <div class="wall__scrim"></div>
-        <div class="wall__copy">
-          <div data-v-cue="0.12 0.9">
-            <h2 class="v-display v-display--lg" data-v-kinetic="lines">Подарок, который остаётся на стене до декабря</h2>
-            <p class="v-lede">Ежедневник теряется, ручка уходит в чужой карман. Календарь с вашими контактами работает весь 2027 год.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 5. Варианты -->
-    <section class="opts v-section v-section--tight" id="varianty" data-v-act="flow">
-      <div class="v-wrap">
-        <div class="opts__head" data-v-in>
-          <h2 class="v-display v-display--md">Выберите формат</h2>
-          <p class="v-body v-soft">Цена зависит от тиража, бумаги и отделки шапки. Напишите, сколько календарей нужно, – посчитаем точно.</p>
-        </div>
-        <div data-v-in data-v-stagger="80">
-          <div class="opt"><h3>Трио</h3><p>Шапка и три блока на трёх пружинах. Классический офисный квартальник.</p><span class="opt__price">уточнить</span></div>
-          <div class="opt"><h3>Моно</h3><p>Шапка и один блок на одной пружине. Компактнее и дешевле в тираже.</p><span class="opt__price">уточнить</span></div>
-          <div class="opt"><h3>Трио с отделкой</h3><p>Тиснение или объёмная шапка – для ключевых клиентов и партнёров.</p><span class="opt__price">уточнить</span></div>
-        </div>
-        <p class="opts__min">Минимальный тираж – {{тираж-от}} шт.</p>
-      </div>
-    </section>
-
-    <!-- 6. Как заказать -->
-    <section class="steps v-section" id="kak-zakazat" data-v-act="flow" data-v-drift="#e4e8ec">
-      <div class="v-wrap">
-        <h2 class="v-display v-display--md" data-v-in data-v-in-self>Как заказать</h2>
-        <ol data-v-in data-v-stagger="80">
-          <li><b>1</b><div><h3>Пишете нам</h3><p>Сколько календарей нужно и какой формат. Присылаете логотип.</p></div></li>
-          <li><b>2</b><div><h3>Согласуем макет</h3><p>Готовим макет шапки и рекламных полей, правим, пока вам не понравится.</p></div></li>
-          <li><b>3</b><div><h3>Печатаем тираж</h3><p>Печать, сборка на пружины, бегунки и упаковка каждого календаря.</p></div></li>
-          <li><b>4</b><div><h3>Передаём вам</h3><p>Доставка или самовывоз. Срок – {{срок}}, точную дату назовём при расчёте.</p></div></li>
-        </ol>
-        <figure class="steps__img" data-v-in data-v-in-self><img src="assets/stack.webp" alt="Стопка готовых квартальных календарей перед упаковкой" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <!-- 7. Заказ -->
-    <section class="close v-section v-section--tight" id="zakaz" data-v-act="flow">
+    <!-- 10. Контакты -->
+    <section class="close v-section v-section--tight" id="kontakty" data-v-act="flow">
       <div class="v-wrap">
         <div class="close__panel">
           <div data-v-in>
             <h2 class="v-display v-display--lg">Рассчитаем ваш тираж</h2>
-            <p class="v-lede v-soft" style="margin-top: var(--v-4)">Напишите, сколько календарей нужно, и пришлите логотип – ответим с ценой и макетом шапки.</p>
-            <a class="v-btn" href="{{ссылка-мессенджер}}">Рассчитать заказ</a>
+            <p class="v-lede v-soft" style="margin-top: var(--v-4)">Напишите, сколько календарей нужно, какую ламинацию, пружину и блоки выбрали, и пришлите логотип – ответим с ценой.</p>
+            <a class="v-btn" href="mailto:goodandprint@mail.ru?subject=%D0%A0%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BA%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D0%B5%D0%B9">Рассчитать заказ</a>
           </div>
           <div class="close__meta" data-v-in data-v-stagger="60">
-            <span><b>Телефон</b>{{телефон}}</span>
-            <span><b>Тиражи к Новому году</b>Чем раньше согласуем макет, тем спокойнее декабрь.</span>
+            <span><b>Телефон</b><a href="tel:+79260011677">+7 (926) 001-16-77</a></span>
+            <span><b>Почта</b><a href="mailto:goodandprint@mail.ru">goodandprint@mail.ru</a></span>
+            <span><b>Сайт</b><a href="https://www.goodandprint.ru" rel="noopener">www.goodandprint.ru</a></span>
           </div>
         </div>
         <footer class="foot">
-          <span>{{название}} · {{город}}</span>
-          <span>Квартальные календари на 2027 год с логотипом</span>
+          <span>goodandprint</span>
+          <span>Квартальные календари премиум-качества</span>
         </footer>
       </div>
     </section>
@@ -344,7 +393,6 @@
   if (window.matchMedia('(max-width: 860px)').matches) {
     document.getElementById('top').setAttribute('data-v-span', '1.4');
     document.getElementById('begunok').setAttribute('data-v-span', '2.2');
-    document.getElementById('na-stene').setAttribute('data-v-span', '1.5');
   }
   Vibe.mount(document.querySelector('.v-page'));
 
